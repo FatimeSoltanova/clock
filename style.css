@@ -1,0 +1,72 @@
+.clock label {
+  position: absolute;
+  inset: 20px;
+  transform: rotate(calc(var(--i) * (360deg / 12)));
+  text-align: center;
+}
+.clock label span {
+  font-size: 30px;
+  font-weight: 600;
+  color: #000;
+  display: inline-block;
+  transform: rotate(calc(var(--i) * (-360deg / 12)));
+}
+
+.indicator::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 4px solid #e74c3c;
+  background-color: #000;
+  z-index: 100;
+}
+ body.dark {
+    background: #242526;
+    .mode-switch {
+    background: #ffff;
+    color: #000;
+  }
+
+  .clock {
+    
+  background: #000;
+    span {
+      color: #ffff;
+    }
+  }
+  .indicator {
+    .hour {
+      background: #fff;
+    }
+
+    .minute {
+      background: #fff;
+    }
+  }
+}
+.hand {
+  position: absolute;
+  height: 130px;
+  width: 4px;
+  bottom: 0;
+  border-radius: 25px;
+  transform-origin: bottom;
+  background: #e74c3c;
+}
+.minute {
+  height: 120px;
+  width: 5px;
+  background: #000;
+}
+.hour {
+  height: 100px;
+  width: 8px;
+  background: #000;
+}
+.second {
+  height: 140px;
+  width: 2px;
+  background: #e74c3c;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="flex h-[100vh] items-center justify-center bg-gray-300 " >  
+   <div class="container  flex gap-[60px] items-center flex-col ">
+    <div class="clock flex w-[400px] h-[400px] bg-white relative shadow rounded-[50%] items-center justify-center"> 
+        <label style="--i: 1"><span>1</span></label> 
+        <label style="--i: 2"><span>2</span></label> 
+        <label style="--i: 3"><span>3</span></label> 
+        <label style="--i: 4"><span>4</span></label> 
+        <label style="--i: 5"><span>5</span></label> 
+        <label style="--i: 6"><span>6</span></label> 
+        <label style="--i: 7"><span>7</span></label> 
+        <label style="--i: 8"><span>8</span></label> 
+        <label style="--i: 9"><span>9</span></label> 
+        <label style="--i: 10"><span>10</span></label> 
+        <label style="--i: 11"><span>11</span></label> 
+        <label style="--i: 12"><span>12</span></label> 
+     <div class="indicator flex absolute size-[10px] justify-center ">
+        <span class="hand hour"></span>
+        <span class="hand minute"></span>
+        <span class="hand second"></span>
+     </div>
+     
+    </div>
+    <div class="mode-switch inline-block rounded-[8px] shadow py-[10px] font-400 text-[22px] px-[20px] text-white bg-black">
+        Dark Mode
+          </div>
+   </div>
+
+    <script src="./app.js"></script>  
+</body> 
+</html>
+
+
